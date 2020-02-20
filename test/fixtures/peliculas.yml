@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  descripcion: MyString
+  url_imagen: MyString
+  dia_funcion: 2020-02-20 02:25:28
+  funcion: one
+
+two:
+  nombre: MyString
+  descripcion: MyString
+  url_imagen: MyString
+  dia_funcion: 2020-02-20 02:25:28
+  funcion: two

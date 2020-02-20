@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pelicula:</strong>
+  <%= @funcion.pelicula %>
+</p>
+
+<p>
+  <strong>Dia:</strong>
+  <%= @funcion.dia %>
+</p>
+
+<p>
+  <strong>Num sillas:</strong>
+  <%= @funcion.num_sillas %>
+</p>
+
+<%= link_to 'Edit', edit_funcion_path(@funcion) %> |
+<%= link_to 'Back', funcions_path %>

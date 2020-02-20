@@ -1,0 +1,32 @@
+<%= form_with(model: funcion, local: true) do |form| %>
+  <% if funcion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(funcion.errors.count, "error") %> prohibited this funcion from being saved:</h2>
+
+      <ul>
+        <% funcion.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :pelicula %>
+    <%= form.text_field :pelicula %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dia %>
+    <%= form.datetime_select :dia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :num_sillas %>
+    <%= form.number_field :num_sillas %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
